@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function seach(acb) {
+            let a=[ 'Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus' ];
+        let b=[ 'Ursa_Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa_Major' , 'Leo'];
+            let x=a.indexOf(acb);
+            if (x===-1) {
+                alert("không");
+            }
+            else {
+                alert( b[x] + "là ngôn sao");
+            }
+        }
+        let e=prompt("nhập tên");
+        seach(e);
+    
+    
+    </script>
+</body>
+</html>
