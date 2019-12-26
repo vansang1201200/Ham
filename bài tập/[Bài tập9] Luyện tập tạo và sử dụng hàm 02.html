@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function search(arr, a) {
+            arr = prompt("Enter an Array");
+            a = prompt("Enter a characters");
+            let sum = 0;
+            if (arr.indexOf(a) !== -1) {
+                for (let i = 0; i < arr.length; i++) {
+                    if (a === arr[i]) {
+                        sum += 1;
+                    }
+                }
+                return `Chuỗi ${arr} có ${sum} ký tự ${a}`;
+            }
+            else {
+                return -1;
+            }
+        }
+        function result(){
+            let a=search()
+            document.write(a);
+        }
+        result();
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

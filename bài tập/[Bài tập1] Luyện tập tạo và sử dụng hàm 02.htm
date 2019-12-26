@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+    function square(number) {
+        number=parseFloat(number);
+        let result = number**2;
+        return `${result}`;
+
+    }
+let a=prompt("nhập số");
+document.write(square(a)); -->
+<script>
+function square(number) {
+    return number**2;
+}
+function nhapso() {
+    do {
+        a=prompt("nhập a");
+    }
+    while(isNaN(a) || parseInt(a) != a || a== '' || a<0 )
+    return a;
+}
+function main() {
+let input=nhapso();
+let result=square(input);
+document.write(result); 
+}
+main();
+</script> 
+    </script>
+</body>
+</html>

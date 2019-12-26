@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hoandoi(a,b) {
+            let tem=a;
+            a=b;
+            b=tem;
+            return `a= ${a} b = ${b}`;
+        }
+        function input() {
+            let num1;
+            do {
+                num1=parseInt(prompt("nhập số"));
+            } while(!Number.isInteger(num1) || num1=="");
+            return num1;
+        }
+function main() {
+    let x1=input();
+    let x2=input();
+    let y=hoandoi(x1,x2);
+    document.write(y);
+}
+main();
+    
+    </script>
+</body>
+</html>

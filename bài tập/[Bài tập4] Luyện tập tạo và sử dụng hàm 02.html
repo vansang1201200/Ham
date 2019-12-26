@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function num(number) {
+         number=parseInt(prompt("nhập number"));
+            if (isNaN(number)) {
+                alert("fales");
+            }
+            else {
+                alert("true");
+            }
+        }
+        num() ;    
+    </script> -->
+    <script>
+        function kituso(number) {
+      if (!isNaN(number)) {
+        return true;
+        }
+        else {
+            return false;
+        }
+        }
+        function input() {
+            do {
+                num=prompt ("nhập number");
+            } while(num=='');
+            return num;
+        }
+        function main() {
+            let a=input();
+            let b=kituso(a);
+            document.write(b);
+        }
+        main();
+    
+        
+    
+    
+    
+    
+    </script>
+</body>
+</html>

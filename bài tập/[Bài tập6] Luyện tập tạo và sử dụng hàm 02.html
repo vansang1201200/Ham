@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function nguyenduonng(number) {
+        //     number = parseInt(prompt("nhập số"))
+        //     if (number >= 0) {
+        //         alert("nguyên dương là " + number);
+        //     }
+        //     else {
+        //         alert(number + "không phải là số nguyên dương");
+        //     }
+        // }
+        // nguyenduonng();
+
+        function positive_integers(number) {
+            if (number > 0) {
+                return "nguyenduong";
+            }
+            else {
+                return "nguyên_âm";
+            }
+        }
+        function input() {
+            do {
+                num = +prompt("nhập số");
+            } while (!Number.isInteger(num) || num=="");
+            return num;
+        }
+        
+        function main() {
+            let x = input();
+            let y = positive_integers(x);
+            document.write(y);
+        }
+        main();
+    </script>
+</body>
+
+</html>

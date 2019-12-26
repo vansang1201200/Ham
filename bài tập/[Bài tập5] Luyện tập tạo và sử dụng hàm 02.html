@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function min(number) {
+        // let a=parseInt(prompt("nhập a"));
+        // let b=parseInt(prompt("nhập b"));
+        // let c=parseInt(prompt("nhập c"));
+        // if (a>b) {
+        //     alert("min là " + b)
+        // }
+        // else if (b>c) {
+        //     alert("min là " + c);
+        // }
+        // else {
+        //     alert("min là " + a);
+        // }  
+        // }
+        // min();
+
+        function findMin(array) {
+            let min = array[0]
+            if (array[1] < min) {
+                min = array[1]
+            }
+            if (array[2] < min) {
+                min = array[2]
+            }
+            return min;
+        }
+        function inputNum(array) {
+            for (let i = 0; i < 3; i++) {
+                do {
+                    array[i] = prompt("nhập phần tử thứ " + (i + 1));
+                } while (isNaN(array[i]) || parseInt(array[i]) < array[i] || array[i] == '')
+            }
+            return array;
+        }
+        function main() {
+            let arrNum = [];
+            inputNum(arrNum);
+            let min = findMin(arrNum);
+            console.log(min);
+        }
+        main();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     function factorial(number) {
+//         number=parseInt(prompt("nhập number"));
+//         let tt=1;
+     
+//          if (number < 0) {
+//                alert(number + " không phải là giai thừa ");
+//         }
+//         else {
+//         for (let i=1;i<=number;i++) {
+//             tt = tt * i;
+//         }
+//         return tt;
+//     }
+//     }
+
+// document.write(factorial());
+    
+function factorial(number) {
+    let e=1;
+    for (let i=1;i<=number;i++) {
+    e=e*i;
+    }
+    return e;
+
+}
+function input() {
+    do {
+        num=prompt("nhập number");
+    } while(isNaN(num)||parseInt(num)!=num || num == ''||num<0)
+    return num;
+}
+function main() {
+ let int  =  input();
+ let result  = factorial(int);
+ document.write(result);
+}
+main();
+    </script>
+</body>
+</html>
